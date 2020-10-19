@@ -29,6 +29,7 @@ services:
     environment:
       - TZ=Europe/Bern
       - npm_config_unsafe_perm=true
+      - CHOKIDAR_USEPOLLING=true
     ports:
       - "8080:8080"
     volumes:

@@ -2,42 +2,50 @@
   <div class="wrapper">
     <side-bar>
       <mobile-menu slot="content"></mobile-menu>
-      <sidebar-link to="/admin/overview">
-        <i class="nc-icon nc-chart-pie-35"></i>
-        <p>Dashboard</p>
-      </sidebar-link>
-      <sidebar-link to="/admin/obstbauer">
+      <sidebar-link to="/obstbauer">
         <i class="nc-icon nc-chart-bar-32"></i>
         <p>Obstbauer</p>
       </sidebar-link>
-      <sidebar-link to="/admin/user">
+      <sidebar-link to="/Brunnenmeister">
+        <i class="nc-icon nc-zoom-split"></i>
+        <p>Brunnenmeister</p>
+      </sidebar-link>
+      <sidebar-link to="/Verbraucher">
+        <i class="nc-icon nc-single-02"></i>
+        <p>Verbraucher</p>
+      </sidebar-link>
+      <sidebar-link to="/overview">
+        <i class="nc-icon nc-chart-pie-35"></i>
+        <p>Dashboard</p>
+      </sidebar-link>
+      <sidebar-link to="/user">
         <i class="nc-icon nc-circle-09"></i>
         <p>User Profile</p>
       </sidebar-link>
-      <sidebar-link to="/admin/table-list">
+      <sidebar-link to="/table-list">
         <i class="nc-icon nc-notes"></i>
         <p>Table list</p>
       </sidebar-link>
-      <sidebar-link to="/admin/typography">
+      <sidebar-link to="/typography">
         <i class="nc-icon nc-paper-2"></i>
         <p>Typography</p>
       </sidebar-link>
-      <sidebar-link to="/admin/icons">
+      <sidebar-link to="/icons">
         <i class="nc-icon nc-atom"></i>
         <p>Icons</p>
       </sidebar-link>
-      <sidebar-link to="/admin/maps">
+      <sidebar-link to="/maps">
         <i class="nc-icon nc-pin-3"></i>
         <p>Maps</p>
       </sidebar-link>
-      <sidebar-link to="/admin/notifications">
+      <sidebar-link to="/notifications">
         <i class="nc-icon nc-bell-55"></i>
         <p>Notifications</p>
       </sidebar-link>
 
       <template slot="bottom-links"><!--
         <sidebar-link class="active"
-                      to="/admin/upgrade">
+                      to="/upgrade">
           <i class="nc-icon nc-alien-33"></i>
           <p>Upgrade to PRO</p>
         </sidebar-link>-->

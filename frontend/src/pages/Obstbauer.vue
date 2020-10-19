@@ -2,9 +2,14 @@
   <div class="content">
     <div class="container-fluid">
 
-      <div class="row">
-        <button v-on:click="getData()">Get Data</button>
+      <div class="row justify-content-center">
+        <div class="col-3 text-center">
+          <div class="col-md-offset-1">
+            <button class="btn btn-default btn-block" v-on:click="getData()">Get Data</button>
+          </div>
+        </div>
       </div>
+      <br>
 
       <div class="row">
         <div class="col-md-12">

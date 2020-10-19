@@ -36,8 +36,6 @@ services:
       - /var/www/app/node_modules
     networks:
       - swa-net
-    depends_on:
-      - node-red
 
 networks:
   swa-net:

@@ -1,0 +1,43 @@
+################################################################################
+# SWA Docker Compose
+# Run the local development stack
+################################################################################
+
+version: "3"
+
+x-disabled:
+  frontend-template:
+    build: 
+      context: ./frontend-template
+      dockerfile: Dockerfile
+    environment:
+      - TZ=Europe/Bern
+      - npm_config_unsafe_perm=true
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./frontend-template:/var/www/app
+      - /var/www/app/node_modules
+    networks:
+      - swa-net
+
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - TZ=Europe/Bern
+      - npm_config_unsafe_perm=true
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend:/var/www/app
+      - /var/www/app/node_modules
+    networks:
+      - swa-net
+    depends_on:
+      - node-red
+
+networks:
+  swa-net:

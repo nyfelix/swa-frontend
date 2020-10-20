@@ -6,6 +6,7 @@ import NotFound from '../pages/NotFoundPage.vue'
 import Obstbauer from 'src/pages/Obstbauer.vue'
 import Brunnenmeister from 'src/pages/Brunnenmeister.vue'
 import Verbraucher from 'src/pages/Verbraucher.vue'
+import Timeseries from 'src/pages/Timeseries.vue'
 import Overview from 'src/pages/Overview.vue'
 import UserProfile from 'src/pages/UserProfile.vue'
 import TableList from 'src/pages/TableList.vue'
@@ -40,6 +41,11 @@ const routes = [
         path: 'verbraucher',
         name: 'Verbraucher',
         component: Verbraucher
+      },
+      {
+        path: 'timeseries',
+        name: 'Timeseries',
+        component: Timeseries
       },
       {
         path: 'overview',

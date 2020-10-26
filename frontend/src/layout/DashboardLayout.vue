@@ -7,22 +7,17 @@
         <p>Obstbauer</p>
       </sidebar-link>
       <sidebar-link to="/Brunnenmeister">
-        <i class="nc-icon nc-chart-pie-36"></i>
+        <i class="nc-icon nc-zoom-split"></i>
         <p>Brunnenmeister</p>
       </sidebar-link>
       <sidebar-link to="/Verbraucher">
         <i class="nc-icon nc-single-02"></i>
         <p>Verbraucher</p>
       </sidebar-link>
-      <sidebar-link to="/Timeseries">
-        <i class="nc-icon nc-credit-card"></i>
-        <p>Timeseries</p>
-      </sidebar-link>
       <sidebar-link to="/overview">
         <i class="nc-icon nc-chart-pie-35"></i>
-        <p>Demoseite</p>
+        <p>Dashboard</p>
       </sidebar-link>
-      <!--
       <sidebar-link to="/user">
         <i class="nc-icon nc-circle-09"></i>
         <p>User Profile</p>
@@ -46,7 +41,7 @@
       <sidebar-link to="/notifications">
         <i class="nc-icon nc-bell-55"></i>
         <p>Notifications</p>
-      </sidebar-link>-->
+      </sidebar-link>
 
       <template slot="bottom-links"><!--
         <sidebar-link class="active"

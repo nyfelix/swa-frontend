@@ -202,7 +202,7 @@ const tableData2 = [{
     verbrauch: "12'078",
     status: "Ok"
   },{
-    bezüger: 'Industrie AG',
+    bezüger: 'Industire AG',
     verbrauch: "12'078",
     status: "Ok"
   },{

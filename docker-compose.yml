@@ -38,5 +38,21 @@ services:
     networks:
       - swa-net
 
+  swa-app:
+    container_name: swa-app
+    build:
+      context: ./swa-app
+      dockerfile: Dockerfile
+    environment:
+      - TZ=Europe/Bern
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - './swa-app:/app'
+      - '/app/node_modules'
+    ports:
+      - '8082:8082'
+    networks:
+      - swa-net
+
 networks:
   swa-net:

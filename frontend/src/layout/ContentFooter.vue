@@ -4,7 +4,7 @@
       <nav>
         <ul class="footer-menu">
           <li>
-            <router-link :to="{path:'/admin'}">Dashboard</router-link>
+            <router-link :to="{path:'/'}">Dashboard</router-link>
           </li>
         </ul>
       </nav>

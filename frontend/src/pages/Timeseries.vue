@@ -5,7 +5,7 @@
       <div class="row justify-content-center">
         <div class="col-3 text-center">
           <div class="col-md-offset-1">
-            <button class="btn btn-default btn-block" v-on:click="getData()">Get Data</button>
+            <button class="btn btn-primary btn-fill btn-block" v-on:click="getData()">Get Data</button>
           </div>
         </div>
       </div>
@@ -61,8 +61,8 @@ import axios from 'axios'
     },
     data () {
       return {
-        temperature: {},
-        moisture: {},
+        temperature: [],
+        moisture: [],
         isLoading: false,
         isError: false
       }

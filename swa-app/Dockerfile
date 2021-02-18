@@ -1,16 +1,20 @@
-# base image
-FROM node:12.2.0-alpine
+### base image
+FROM node:latest
 
-# set working directory
-WORKDIR /app
+### set working directory
+WORKDIR /var/www/app
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+### add `/app/node_modules/.bin` to $PATH
+#ENV PATH /var/www/app/node_modules/.bin:$PATH
 
-# install and cache app dependencies
-COPY test-app/package.json /app/package.json
+### install and cache app dependencies
+COPY package*.json ./
 RUN npm install
-RUN npm install @vue/cli@4.5.11 -g
+COPY . .
+#RUN npm install @vue/cli@4.5.11 -g
+
+EXPOSE 8082
+
 
 # start app
-CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "dev"]

@@ -47,10 +47,10 @@ services:
       - TZ=Europe/Bern
       - CHOKIDAR_USEPOLLING=true
     volumes:
-      - './swa-app:/app'
-      - '/app/node_modules'
+      - ./swa-app:/var/www/app
+      - /var/www/app/node_modules
     ports:
-      - '8082:8082'
+      - "8082:8082"
     networks:
       - swa-net
 

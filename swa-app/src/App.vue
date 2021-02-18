@@ -87,11 +87,11 @@
     data: () => ({
         drawer: null,
         items: [
-          { title: 'Todo', icon: 'mdi-format-list-checks', to: '/' },
           { title: 'Obstbauer', icon: 'mdi-fruit-cherries', to:'/obstbauer' },
           { title: 'Brunnenmeister', icon: 'mdi-water-pump', to:'/brunnenmeister' },
           { title: 'Verbraucher', icon: 'mdi-cup-water', to:'/verbraucher' },
           { title: 'About', icon: 'mdi-information-variant', to:'/about' },
+          { title: 'Todo Example', icon: 'mdi-format-list-checks', to: '/todo' },
         ]
         }),
   }

@@ -4,7 +4,7 @@ WORKDIR /app
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend .
-RUN npm run build
+RUN apt-get install npm -y
 
 # production stage
 FROM nginx:stable-alpine

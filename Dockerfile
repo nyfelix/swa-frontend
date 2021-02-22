@@ -2,7 +2,7 @@
 FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY frontend/package*.json ./
-RUN apt-get install npm -y
+RUN npm
 COPY frontend .
 RUN npm run build
 
